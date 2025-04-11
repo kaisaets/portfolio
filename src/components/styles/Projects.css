@@ -1,0 +1,129 @@
+.projects {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff1e6;
+  font-family: "Open Sans";
+  color: #122023;
+  scroll-margin-top: 80px;
+}
+.projects h1 {
+  font-family: "Roboto";
+  font-size: 36pt;
+}
+.projects .projectTitle {
+  text-align: center;
+  color: #122023;
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.projectList {
+  width: 70vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+/* MENU ITEM STYLING */
+
+.projectItem {
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  margin: 40px;
+  position: relative;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.064);
+  text-align: center;
+  font-family: "Open Sans";
+  overflow: hidden;
+}
+
+
+.projectItem {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #cccccc18;
+  overflow: hidden;
+}
+
+.projectItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.bgImage {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.projectItem h1 {
+  font-size: 36px;
+}
+.projectItem h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.projectItem p {
+  font-size: 16px;
+  font-family: "open sans";
+  color: #122023;
+  margin-top: 10px;
+  line-height: 1.5;
+  
+}
+
+.viewProjectLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.viewProjectLink p {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.projectItem:hover .viewProjectLink {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 1300px) {
+  .projectList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projectList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .projectList {
+    width: 100%;
+  }
+  .projectItem {
+    width: 300px;
+    height: 300px;
+  }
+}
