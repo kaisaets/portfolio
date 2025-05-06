@@ -15,9 +15,10 @@ const Footer = () => {
            <a href="https://www.linkedin.com/in/kaisa-ets/" target="_blank" rel="noopener noreferrer">
            <FaLinkedin className="icon" />
            </a>
-           <a href="mailto:kaisaets@gmail.com">
-           <MdEmail className="icon" /> {/* meilivorm, kumb logo, logod ühte suurusesse? */}
-           </a>
+           <p>
+           Send me an email: <br />
+           kaisa.ets@voco.ee
+           </p>
            </div>
            {/* //script? */}
            <p> &copy; 2025</p> 

@@ -1,123 +1,138 @@
 import React from "react";
-import './styles/About.css'
+import "./styles/About.css";
 
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import WorkIcon from "@mui/icons-material/Work";
+import SchoolIcon from "@mui/icons-material/School";
+import LinkIcon from '@mui/icons-material/Link';
 
-import WorkIcon from '@mui/icons-material/Work';
-import SchoolIcon from '@mui/icons-material/School';
-import StarIcon from '@mui/icons-material/Star';
-
-const About = () =>  {
-    return (
-        <>
-        <div id="about" className="about">
+const About = () => {
+  return (
+    <>
+      <div id="about" className="about">
         <h1>About me</h1>
-          <p>My name is Kaisa Ets, and I am 30 years old. I have previously studied at University of
-            Tartu Pärnu College, where I graduated from tourism and hotel management. After working
-            in the field for a few years, I attended career counseling. After analyzing the results,
-            I decided to take some lT courses to gain more insight. This, in turn, made me want to
-            gain a deeper understanding of the subject, so I applied to Tartu Vocational College,
-            specializing in software development and was accepted. </p>
-        </div>
+        <p>
+          My name is Kaisa Ets, and I am 30 years old. I have previously studied
+          at University of Tartu Pärnu College, where I graduated from tourism
+          and hotel management. After working in the field for a few years, I
+          attended career counseling. After analyzing the results, I decided to
+          take some lT courses to gain more insight. This, in turn, made me want
+          to gain a deeper understanding of the subject, so I applied to Tartu
+          Vocational College, specializing in software development and was
+          accepted.{" "}
+        </p>
         <div className="experience">
-            <VerticalTimeline animate="true" lineColor="red">
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                    date="2011 - present"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
+          <VerticalTimeline animate="true" lineColor="#122223">
+            <VerticalTimelineElement
+              className="vertical-timeline-element--education"
+              date="September 2024 - ..."
+              iconStyle={{ background: "rgb(231, 84, 133)", color: "#fff" }}
+              icon={<SchoolIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Software development
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                Vocational education
+              </h4>
+              <p>Tartu Vocational College</p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="May - June 2024"
+              iconStyle={{ background: "rgb(86, 162, 223)", color: "#fff" }}
+              icon={<WorkIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Technical consultant intern
+              </h3>
+              <p>Telia Eesti AS</p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--education"
+              date="March - October 2024"
+              iconStyle={{ background: "rgb(231, 84, 133)", color: "#fff" }}
+              icon={<SchoolIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                "WoTech" reskilling program
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                Certification
+              </h4>
+              <p><a
+                  href="https://www.smartworkacademy.com/wotech"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                    <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2010 - 2011"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
+                  Java, Python <LinkIcon />
+                </a></p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--education"
+              date="March 2023 - January 2024"
+              iconStyle={{ background: "rgb(231, 84, 133)", color: "#fff" }}
+              icon={<SchoolIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                            "Work In Tech" retraining program
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                Certification
+              </h4>
+              <p>
+                <a
+                  href="https://www.coursera.org/professional-certificates/google-it-support"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                    <h3 className="vertical-timeline-element-title">Art Director</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2008 - 2010"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
+                  Google IT Support Specialist <LinkIcon />
+                </a>
+                <br />
+                <a
+                  href="https://www.coursera.org/professional-certificates/google-project-management"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                    <p>
-                    User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--work"
-                    date="2006 - 2008"
-                    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                    icon={<WorkIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                    <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                    <p>
-                    User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="April 2013"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<SchoolIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                    <p>
-                    Strategy, Social Media
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="November 2012"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<SchoolIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                    <p>
-                    Creative Direction, User Experience, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    className="vertical-timeline-element--education"
-                    date="2002 - 2006"
-                    iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                    icon={<SchoolIcon />}
-                >
-                    <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                    <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                    <p>
-                    Creative Direction, Visual Design
-                    </p>
-                </VerticalTimelineElement>
-                <VerticalTimelineElement
-                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                    icon={<StarIcon />}
-                />
-            </VerticalTimeline>
+                  Google Project Management <LinkIcon />
+                </a>
+              </p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--work"
+              date="2019 - 2021"
+              iconStyle={{ background: "rgb(86, 162, 223)", color: "#fff" }}
+              icon={<WorkIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Travel consultant
+              </h3>
+              <p>CWT Estonia AS</p>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+              className="vertical-timeline-element--education"
+              date="2016 - 2019"
+              iconStyle={{ background: "rgb(231, 84, 133)", color: "#fff" }}
+              icon={<SchoolIcon />}
+            >
+              <h3 className="vertical-timeline-element-title">
+                Tourism and Hotel Management
+              </h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                Diploma of professional higher education
+              </h4>
+              <p>University of Tartu Pärnu College</p>
+            </VerticalTimelineElement>
+           </VerticalTimeline>
         </div>
-        </> 
+      </div>
+    </>
+  );
+};
 
-    )
-}
-
-export default About
+export default About;

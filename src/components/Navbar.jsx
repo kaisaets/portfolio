@@ -15,6 +15,7 @@ const Navbar = () => {
       <nav className="links">
         <a href="#home" onClick={() => setExpandNavbar(false)}>Home</a>
         <a href="#about" onClick={() => setExpandNavbar(false)}>About</a>
+        <a href="#skills" onClick={() => setExpandNavbar(false)}>Skills</a>
         <a href="#projects" onClick={() => setExpandNavbar(false)}>Projects</a>
         <a href="#contacts" onClick={() => setExpandNavbar(false)}>Contacts</a>
       </nav>
