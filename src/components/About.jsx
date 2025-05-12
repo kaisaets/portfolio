@@ -9,29 +9,34 @@ import "react-vertical-timeline-component/style.min.css";
 
 import WorkIcon from "@mui/icons-material/Work";
 import SchoolIcon from "@mui/icons-material/School";
-import LinkIcon from '@mui/icons-material/Link';
+import LinkIcon from "@mui/icons-material/Link";
 
 const About = () => {
   return (
     <>
       <div id="about" className="about">
         <h1>About me</h1>
-        <p>
-          My name is Kaisa Ets, and I am 30 years old. I have previously studied
-          at University of Tartu Pärnu College, where I graduated from tourism
-          and hotel management. After working in the field for a few years, I
-          attended career counseling. After analyzing the results, I decided to
-          take some lT courses to gain more insight. This, in turn, made me want
-          to gain a deeper understanding of the subject, so I applied to Tartu
-          Vocational College, specializing in software development and was
-          accepted.{" "}
-        </p>
+        <div className="introduction">
+          <div className="text-section">
+            <p>
+              My name is Kaisa Ets, and I am 30 years old. I have previously
+              studied at University of Tartu Pärnu College, where I graduated
+              from tourism and hotel management. After working in the field for
+              a few years, I attended career counseling. After analyzing the
+              results, I decided to take some lT courses to gain more insight.
+              This, in turn, made me want to gain a deeper understanding of the
+              subject, so I applied to Tartu Vocational College, specializing in
+              software development and was accepted.{" "}
+            </p>
+          </div>
+          <div className="image">photo</div>
+        </div>
         <div className="experience">
           <VerticalTimeline animate="true" lineColor="#122223">
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="September 2024 - ..."
-              iconStyle={{ background: "rgb(231, 84, 133)", color: "#fff" }}
+              iconStyle={{ background: "rgb(230, 109, 149)", color: "#fff" }}
               icon={<SchoolIcon />}
             >
               <h3 className="vertical-timeline-element-title">
@@ -45,7 +50,7 @@ const About = () => {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="May - June 2024"
-              iconStyle={{ background: "rgb(86, 162, 223)", color: "#fff" }}
+              iconStyle={{ background: "rgb(86, 109, 149)", color: "#fff" }}
               icon={<WorkIcon />}
             >
               <h3 className="vertical-timeline-element-title">
@@ -56,7 +61,7 @@ const About = () => {
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="March - October 2024"
-              iconStyle={{ background: "rgb(231, 84, 133)", color: "#fff" }}
+              iconStyle={{ background: "rgb(230, 109, 149)", color: "#fff" }}
               icon={<SchoolIcon />}
             >
               <h3 className="vertical-timeline-element-title">
@@ -65,22 +70,24 @@ const About = () => {
               <h4 className="vertical-timeline-element-subtitle">
                 Certification
               </h4>
-              <p><a
+              <p>
+                <a
                   href="https://www.smartworkacademy.com/wotech"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Java, Python <LinkIcon />
-                </a></p>
+                </a>
+              </p>
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="March 2023 - January 2024"
-              iconStyle={{ background: "rgb(231, 84, 133)", color: "#fff" }}
+              iconStyle={{ background: "rgb(230, 109, 149)", color: "#fff" }}
               icon={<SchoolIcon />}
             >
               <h3 className="vertical-timeline-element-title">
-                            "Work In Tech" retraining program
+                "Work In Tech" retraining program
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
                 Certification
@@ -106,7 +113,7 @@ const About = () => {
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               date="2019 - 2021"
-              iconStyle={{ background: "rgb(86, 162, 223)", color: "#fff" }}
+              iconStyle={{ background: "rgb(86, 109, 149)", color: "#fff" }}
               icon={<WorkIcon />}
             >
               <h3 className="vertical-timeline-element-title">
@@ -117,7 +124,7 @@ const About = () => {
             <VerticalTimelineElement
               className="vertical-timeline-element--education"
               date="2016 - 2019"
-              iconStyle={{ background: "rgb(231, 84, 133)", color: "#fff" }}
+              iconStyle={{ background: "rgb(230, 109, 149)", color: "#fff" }}
               icon={<SchoolIcon />}
             >
               <h3 className="vertical-timeline-element-title">
@@ -128,7 +135,7 @@ const About = () => {
               </h4>
               <p>University of Tartu Pärnu College</p>
             </VerticalTimelineElement>
-           </VerticalTimeline>
+          </VerticalTimeline>
         </div>
       </div>
     </>
