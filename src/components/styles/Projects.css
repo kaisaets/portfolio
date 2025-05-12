@@ -11,8 +11,12 @@
   scroll-margin-top: 80px;
 }
 .projects h1 {
-  font-family: "Roboto";
+  color: #122023;
   font-size: 36pt;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
 }
 .projects .projectTitle {
   text-align: center;

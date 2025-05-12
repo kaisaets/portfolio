@@ -13,9 +13,12 @@
 }
 
 .about h1 {
-  font-family: "Roboto";
-  font-size: 36px;
-  margin-bottom: 1rem;
+  color: #122023;
+  font-size: 36pt;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
 }
 
 .introduction {
