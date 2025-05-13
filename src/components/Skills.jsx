@@ -34,7 +34,7 @@ const Skills = () => {
         <li className="item githubStats">
           <h2>Most used languages according to my GitHub account</h2>
           <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=kaisaets&layout=compact&theme=default&bg_color=f9f5e3&hide_border=true&hide_title=true"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=kaisaets&layout=compact&theme=graywhite&bg_color=f9f5e3&hide_border=true&hide_title=true"
             alt="My GitHub Top Languages"
             className="statsCard"
           />

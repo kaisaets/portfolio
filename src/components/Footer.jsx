@@ -1,9 +1,6 @@
 import React from "react";
 import './styles/Footer.css'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-
-
 
 const Footer = () => {
     return(
@@ -15,13 +12,13 @@ const Footer = () => {
            <a href="https://www.linkedin.com/in/kaisa-ets/" target="_blank" rel="noopener noreferrer">
            <FaLinkedin className="icon" />
            </a>
-           <p>
+           <p className="email">
            Send me an email: <br />
            kaisa.ets@voco.ee
            </p>
            </div>
            {/* //script? */}
-           <p> &copy; 2025</p> 
+           <p className="copyright"> &copy; 2025</p> 
         </div>
     )
 }

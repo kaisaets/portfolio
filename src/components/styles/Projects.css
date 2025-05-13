@@ -1,12 +1,12 @@
 .projects {
   width: 100%;
+  padding: 20px 0;
   height: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #fff1e6;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   color: #122023;
   scroll-margin-top: 80px;
 }
@@ -36,26 +36,19 @@
 .projectItem {
   border-radius: 15px;
   width: 300px;
-  height: 300px;
+  height: 340px;
   margin: 40px;
+  padding: 10px;
   position: relative;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.064);
   text-align: center;
-  font-family: "Open Sans";
   overflow: hidden;
-}
-
-
-.projectItem {
-  position: relative;
-  text-align: center;
-  padding: 10px;
   border: 1px solid #cccccc18;
-  overflow: hidden;
+
 }
 
 .projectItem:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5); 
   transition: 0.3s ease-in;
   cursor: pointer;
 }
@@ -69,15 +62,16 @@
 
 .projectItem h1 {
   font-size: 36px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 .projectItem h2 {
   font-size: 24px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .projectItem p {
   font-size: 16px;
-  font-family: "open sans";
   color: #122023;
   margin-top: 10px;
   line-height: 1.5;
@@ -104,25 +98,34 @@
   font-weight: bold;
 }
 
-.projectItem:hover .viewProjectLink {
+/*  "view project" appear on hover, currently switched off
+ .projectItem:hover .viewProjectLink {
   opacity: 1;
+} */
+
+.techIcons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.techIcon {
+  font-size: 24px;
+  color: #122023;
 }
 
 @media only screen and (max-width: 1300px) {
   .projectList {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .projectList {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (max-width: 800px) {
   .projectList {
     width: 100%;
+    grid-template-columns: 1fr;
+    gap: 5px;
   }
   .projectItem {
     width: 300px;

@@ -33,9 +33,14 @@
   transform: scale(1.07);
 }
 
-.footer p {
+.copyright {
   font-weight: bold;
   font-size: 12px;
+}
+
+.email {
+  font-size: 16px;
+  font-weight: 800;
 }
 
 @media only screen and (max-width: 600px) {
