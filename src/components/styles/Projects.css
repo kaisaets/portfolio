@@ -44,11 +44,10 @@
   text-align: center;
   overflow: hidden;
   border: 1px solid #cccccc18;
-
 }
 
 .projectItem:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in;
   cursor: pointer;
 }
@@ -70,15 +69,20 @@
   margin-top: 8px;
 }
 
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
 .projectItem p {
   font-size: 16px;
   color: #122023;
   margin-top: 10px;
   line-height: 1.5;
-  
 }
 
-.viewProjectLink {
+/* .viewProjectLink {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,12 +95,12 @@
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 5px;
-}
-.viewProjectLink p {
+} */
+/* .viewProjectLink p {
   text-align: center;
   font-size: 26px;
   font-weight: bold;
-}
+} */
 
 /*  "view project" appear on hover, currently switched off
  .projectItem:hover .viewProjectLink {
@@ -129,6 +133,6 @@
   }
   .projectItem {
     width: 300px;
-    height: 300px;
+    /* height: 300px; */
   }
 }

@@ -55,7 +55,7 @@
 .vertical-timeline-element-content {
   background: #ffffff;
   border-radius: 12px;
-  padding: 1rem !important;
+  padding: 0.6rem !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
   text-align: left;
 }
@@ -109,7 +109,7 @@
   color: #6b6b6b;
   font-weight: 500;
   text-align: left;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 @media only screen and (max-width: 600px) {

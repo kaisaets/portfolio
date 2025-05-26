@@ -1,8 +1,12 @@
-import React from "react";
 import "./styles/Skills.css";
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiStyledcomponents, SiMysql, SiMariadbfoundation, SiMongodb } from "react-icons/si";
+import {
+  SiStyledcomponents,
+  SiMysql,
+  SiMariadbfoundation,
+  SiMongodb,
+} from "react-icons/si";
 
 const Skills = () => {
   return (
@@ -32,7 +36,17 @@ const Skills = () => {
           </span>
         </li>
         <li className="item githubStats">
-          <h2>Most used languages according to my GitHub account</h2>
+          <h2>
+            Most used languages according to my{" "}
+            <a
+              href="https://github.com/kaisaets"
+              className="githubLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub account
+            </a>
+          </h2>
           <img
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=kaisaets&layout=compact&theme=graywhite&bg_color=f9f5e3&hide_border=true&hide_title=true"
             alt="My GitHub Top Languages"

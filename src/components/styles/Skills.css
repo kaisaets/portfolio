@@ -74,6 +74,15 @@
   gap: 0 px;
 }
 
+.githubLink {
+  color: #122023c2; 
+  text-decoration: underline;
+}
+
+.githubLink:hover {
+  color: #122023f1; 
+}
+
 .githubStats img {
   width: 80%;
   max-width: 100%;

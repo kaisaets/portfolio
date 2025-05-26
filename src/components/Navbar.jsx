@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import './styles/Navbar.css';
 import { IoReorderFour } from "react-icons/io5";
 
@@ -13,7 +13,6 @@ const Navbar = () => {
         </button>
       </div>
       <nav className="links">
-        <a href="#home" onClick={() => setExpandNavbar(false)}>Home</a>
         <a href="#about" onClick={() => setExpandNavbar(false)}>About</a>
         <a href="#skills" onClick={() => setExpandNavbar(false)}>Skills</a>
         <a href="#projects" onClick={() => setExpandNavbar(false)}>Projects</a>
