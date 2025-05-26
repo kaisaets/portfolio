@@ -1,5 +1,5 @@
 import "./styles/About.css";
-
+import placeholder from "../assets/placeholder.jpg";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -28,7 +28,9 @@ const About = () => {
               software development and was accepted.{" "}
             </p>
           </div>
-          <div className="image">photo</div>
+          <div className="image">
+            <img src={placeholder} alt="placeholder" />
+          </div>
         </div>
         <div className="experience">
           <VerticalTimeline animate="true" lineColor="#122223">

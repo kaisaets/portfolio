@@ -34,14 +34,15 @@ const Footer = () => {
         </a>
         <p className="email">
           Send me an email: <br />
-          <FaCopy className="emailIcon" />
-          <span className="emailAddress" onClick={handleCopy}>{email}</span>{" "}
+          <span className="emailRow">
+            <FaCopy className="emailIcon" />
+            <span className="emailAddress" onClick={handleCopy}>
+              {email}
+            </span>{" "}
+          </span>
           {copied && (
             <>
-              <br />{" "}
-              <span className="copy">
-                Copied!
-              </span>
+              <br /> <span className="copy">Copied!</span>
             </>
           )}
         </p>
