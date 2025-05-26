@@ -75,12 +75,12 @@
 }
 
 .githubLink {
-  color: #122023c2; 
-  text-decoration: underline;
+  color: #122023c2 !important;
+  text-decoration: underline !important;
 }
 
 .githubLink:hover {
-  color: #122023f1; 
+  color: #122023f1 !important;
 }
 
 .githubStats img {
